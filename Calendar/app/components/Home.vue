@@ -60,7 +60,7 @@ export default {
       curMouthName: "",
       curCountDays: [],
       dayCountMouth: 0,
-      arrDayMouth: ["1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1"],
+      arrDayMouth: [],
     };
   },
   created() {
@@ -80,15 +80,6 @@ export default {
       for (let i = 1; i <= this.dayCountMouth; i++) {
         this.arrDayMouth.push(i);
       }
-
-      console.log("_______________start__________________");
-      console.log("_________________________________");
-      console.log(dayCountMouthLeft);
-      console.log("_________________________________");
-      console.log(dayWeekMouth);
-      console.log("_________________________________");
-      console.log(this.arrDayMouth);
-      console.log("_________________________________");
     },
     setCurMouth() {
       this.curMouthName = this.monthName[this.nowMonth];
